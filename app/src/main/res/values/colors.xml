@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#6e0e7d</color>
+    <color name="miralcolor">#555bb6</color>
+    <color name="black">#000000</color>
+    <color name="mos">#fde109</color>
+    <color name="blue">#4b5f96</color>
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="markscolor">#dac02d</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+</resources>

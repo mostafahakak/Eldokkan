@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="volleyappsetup.com.theapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRx9JXC_fJX8DPzxKboXf-KU7mCxzdA2Q" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signin" />
+        <activity android:name=".signup" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ItemList"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ItemDetail"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cart"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderStatus"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Favorite"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1316548528485611~4556739290" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="9f3cf91b40da5562bc8ee6b69fcbdeb2" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/facebook_login_protocall_name" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider340053040143852"
+            android:exported="true" />
+
+        <activity
+            android:name=".OrderView"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".News_activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReadMore"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:replace="android:theme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Message"></activity>
+    </application>
+
+</manifest>

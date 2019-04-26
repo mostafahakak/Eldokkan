@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_for"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add"
+                android:inputType="textMultiLine"
+                android:textColor="@color/transparentBlack"
+                android:textColorHint="@color/transparentBlack"
+                android:textSize="24sp"
+                app:met_baseColor="@color/transparentBlack"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/transparentBlack"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="@color/colorAccent"
+
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtcomment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/com"
+                android:inputType="textMultiLine"
+                android:textColor="@color/transparentBlack"
+                android:textColorHint="@color/transparentBlack"
+                android:textSize="24sp"
+                app:met_baseColor="@color/transparentBlack"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/transparentBlack"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Promo Code"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:textColor="@color/transparentBlack"
+                    android:textSize="24sp"
+                    app:met_baseColor="@color/transparentBlack"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/transparentBlack"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColorHint="@color/blue"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/pcode"
+                        android:layout_width="167dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/fbutton_color_amethyst"
+                        android:gravity="center"
+                        android:text="@string/prcode"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

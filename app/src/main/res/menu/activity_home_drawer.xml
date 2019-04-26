@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Order"
+            android:icon="@drawable/ic_location_searching_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/order" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/cart" />
+        <item
+            android:id="@+id/fav"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/fav" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/cus" />
+
+        <item
+            android:id="@+id/editname"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/changena" />
+        <item
+            android:id="@+id/Log_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:iconTint="@android:color/white"
+            android:title="@string/signout" />
+    </group>
+
+</menu>

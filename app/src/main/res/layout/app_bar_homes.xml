@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+    <include layout="@layout/content_homes" />
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/fabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/fbutton_color_silver"
+        app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</android.support.design.widget.CoordinatorLayout>
